@@ -1,0 +1,10 @@
+{
+  "name": "simple-hue-library",
+  "description": "josh.ai challenge phillip hue library",
+  "version": "0.0.1",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "lodash": "^4.17.4"
+  }
+}
