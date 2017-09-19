@@ -14,7 +14,7 @@ function fetchLights(api_url, api_username) {
                 
                 _.map(response.data.lights, (light, id) => {
                     var lightObj = {
-                        id,                        
+                        id: parseInt(id),                        
                         name: light.name,                                                
                         on: light.state.on,
                         brightness: light.state.bri
@@ -30,4 +30,4 @@ function fetchLights(api_url, api_username) {
     })
 };
 
-export { fetchLights };
+module.exports = { fetchLights };
